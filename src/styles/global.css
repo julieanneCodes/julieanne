@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Open+Sans:ital@1&display=swap');
+* {
+    box-sizing: border-box;
+}
+@media only screen and (max-width:768px) {
+    .photos > div{ 
+        width: 14.5rem !important; height: 19.313rem !important;
+        margin-left: .5rem !important; margin-bottom: .5rem !important;
+        clear: left;
+    }
+    /*.photos {margin: 0 !important;}*/
+    #links a, .logos{display: none;}
+    /*.titleBox{float: left;}*/
+    .titleBox{
+        margin: 0 !important; display: inline-block; 
+        width: 50% !important;
+    }
+    #links button{display: block !important; width: 100% !important;}
+    #headerTitle{font-size: 1.5rem;}
+    .menuH{margin-bottom: 2rem; padding-top: 1.45rem;}
+    header{text-align: unset !important;}
+    #links{padding: 0rem 2rem 0rem 0rem !important; width: 50% !important;}
+    .svg{float: right;}
+}
+@media only screen and (max-width:425px) {
+    #links{width: 25% !important;}
+    .titleBox{width: 75% !important; padding: .2rem !important;}
+    .column {
+        flex: 50% !important;
+        max-width: 50% !important;
+    }
+    .contactText{padding: 0rem 1.5rem 0rem 1.5rem;}
+    #headerTitle{font-size: 1.25rem !important;}
+}
+@media only screen and (max-width: 375px) {
+    #headerTitle {font-size: 1.25rem !important;}
+    .titleBox{width: 75% !important; padding: .2rem !important;}
+    #links{width: 25% !important;}
+    .photos > div {
+        width: 9.375rem !important; height: 12.5rem !important;
+        margin-left: .4rem !important;
+    }
+
+}
+/*@media only screen and (max-width: 375px) {
+    .photos > div {
+        width: 11.25rem !important; height: 15rem !important;
+        margin-left: .3rem !important;
+    }
+}*/
+body{margin: 0; width: 100%;}
+a{
+    color: whitesmoke; margin: 1.5rem;
+}
+footer{
+    background-color: #212322; color: whitesmoke; 
+    padding: 3rem;
+}
+#links{
+    padding-bottom: 1.5rem; display: inline-block; 
+    padding-left: 5.5rem;
+}
+#links a{
+    text-decoration: none; margin-left: 1.5rem; 
+    margin-right: 0rem; font-family: 'Crimson Text', sans-serif;
+}
+.logos img{
+    height: 1rem; width: 1rem;
+}
+.logos{float: right;}
+.logos a{margin: 1rem;}
+#links a:hover{text-decoration: underline;}
+#nombreC{float: right;}
+#inLogo{margin-right: 3rem;}
+#headerTitle{font-family: 'Julius Sans One',sans-serif;}
+/*.photos{margin: 1.5rem;}*/
+div.photos > div {
+    height: 24.125rem; width: 14.5rem;
+    /*margin-right: 0.628rem;*/ display: inline-block;
+}
+.form{
+    margin: auto; width: 100%;
+    max-width: 26.25rem;
+    padding: 0.938rem; margin-bottom: 3rem;
+    display: block; text-align: left;
+}
+.formGroup{
+    position: relative; margin-bottom: 1rem;
+}
+.formGroup > label > input {
+    height: 3.125rem; padding: .75rem;
+    width: 100%; border-radius: .25rem;
+    border: 1px solid #ced4da; overflow: visible;
+    margin-top: .5rem;
+}
+.formGroup > label > textarea {
+    width: 100%; border-radius: .25rem;
+    border: 1px solid #ced4da; max-width: 24.349rem;
+    padding: .75rem; margin-top: .5rem;
+}
+.contactTitle, .contactEmail{
+    margin: auto; width: 100%;
+     max-width: 26.25rem; padding: .75rem;
+     text-align: center;
+    }
+.contactTitle > h2{
+    margin-top: 0rem; font-family: 'Crimson Text', serif;
+}
+.contactText{
+    margin: auto; width: 100%;
+    max-width: 34rem; text-align: center;
+}
+.contactText > h4, .contactEmail > h3{margin-top: 0;}
+button{ 
+    height: 3rem; border: 1px solid #212322; 
+    background-color: inherit; cursor: pointer;
+    border-radius: .25rem;
+}
+button:hover{
+    background-color: #212322; color: whitesmoke;
+}
+#links button { display: none;}
+.photosContainer{
+    display: flex; flex-wrap: wrap; padding: 0 1rem;
+}
+.column{
+    flex: 25%; max-width: 25%;
+    padding: 0 .30rem;
+}
+.column > div {
+    margin-top: .5rem; vertical-align: middle;
+    width: 100%;
+}
+
