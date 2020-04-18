@@ -5,7 +5,6 @@ import ImagesC2 from "../components/imagesC2"
 import ImagesC3 from "../components/imagesC3"
 import ImagesC4 from "../components/imagesC4"
 const PhotographyPage =() => (
-    <div>
         <Layout>
             <div className="photosContainer">
                 <div className="column"><ImagesC1/></div>
@@ -15,6 +14,5 @@ const PhotographyPage =() => (
             </div>
         
         </Layout>
-    </div>
 )
 export default PhotographyPage

@@ -3,59 +3,57 @@
 * {
     box-sizing: border-box;
 }
+/*****  MEDIA QUERYS  *****/
 @media only screen and (max-width:768px) {
-    .photos > div{ 
-        width: 14.5rem !important; height: 19.313rem !important;
-        margin-left: .5rem !important; margin-bottom: .5rem !important;
-        clear: left;
-    }
-    /*.photos {margin: 0 !important;}*/
     #links a, .logos{display: none;}
-    /*.titleBox{float: left;}*/
     .titleBox{
         margin: 0 !important; display: inline-block; 
         width: 50% !important;
     }
+    .bm-menu > .bm-item-list > #links > a, .bm-menu > .bm-item-list .logos {display: inline-block !important;}
     #links button{display: block !important; width: 100% !important;}
     #headerTitle{font-size: 1.5rem;}
     .menuH{margin-bottom: 2rem; padding-top: 1.45rem;}
     header{text-align: unset !important;}
-    #links{padding: 0rem 2rem 0rem 0rem !important; width: 50% !important;}
+    #links{padding: 0rem 2rem 0rem 0rem !important;}
     .svg{float: right;}
+    .bm-burger-button {display: block !important;}
 }
 @media only screen and (max-width:425px) {
-    #links{width: 25% !important;}
     .titleBox{width: 75% !important; padding: .2rem !important;}
     .column {
         flex: 50% !important;
         max-width: 50% !important;
     }
     .contactText{padding: 0rem 1.5rem 0rem 1.5rem;}
-    #headerTitle{font-size: 1.25rem !important;}
+    #headerTitle{font-size: 1.25rem !important; margin-top: 1.5rem !important;}
+    header{height: 4rem;}
+    .customButton{display: none !important;}
+    .aboutInfo > ul {padding-left: 0rem !important;}
+    .aboutInfo{margin-top: 3rem !important;}
 }
 @media only screen and (max-width: 375px) {
     #headerTitle {font-size: 1.25rem !important;}
     .titleBox{width: 75% !important; padding: .2rem !important;}
-    #links{width: 25% !important;}
-    .photos > div {
-        width: 9.375rem !important; height: 12.5rem !important;
-        margin-left: .4rem !important;
-    }
 
 }
-/*@media only screen and (max-width: 375px) {
-    .photos > div {
-        width: 11.25rem !important; height: 15rem !important;
-        margin-left: .3rem !important;
+@media only screen and (max-width: 1024px){
+    .indexF{margin-bottom: 8.7rem !important;}
+    .indexF, .indexS {
+        top: 1.45rem !important; 
     }
-}*/
+    .indexS{
+        height: 28.5rem !important;
+    }
+}
+
 body{margin: 0; width: 100%;}
 a{
     color: whitesmoke; margin: 1.5rem;
 }
 footer{
     background-color: #212322; color: whitesmoke; 
-    padding: 3rem;
+    padding: 3rem; margin-top: 1rem;
 }
 #links{
     padding-bottom: 1.5rem; display: inline-block; 
@@ -74,11 +72,8 @@ footer{
 #nombreC{float: right;}
 #inLogo{margin-right: 3rem;}
 #headerTitle{font-family: 'Julius Sans One',sans-serif;}
-/*.photos{margin: 1.5rem;}*/
-div.photos > div {
-    height: 24.125rem; width: 14.5rem;
-    /*margin-right: 0.628rem;*/ display: inline-block;
-}
+
+/*****  FORM  *****/
 .form{
     margin: auto; width: 100%;
     max-width: 26.25rem;
@@ -99,6 +94,7 @@ div.photos > div {
     border: 1px solid #ced4da; max-width: 24.349rem;
     padding: .75rem; margin-top: .5rem;
 }
+/*****  CONTACT PAGE  *****/
 .contactTitle, .contactEmail{
     margin: auto; width: 100%;
      max-width: 26.25rem; padding: .75rem;
@@ -121,8 +117,34 @@ button:hover{
     background-color: #212322; color: whitesmoke;
 }
 #links button { display: none;}
-.photosContainer{
-    display: flex; flex-wrap: wrap; padding: 0 1rem;
+/*****  INDEX PAGE AND PHOTOGRAPHY PAGE  *****/
+.indexF div, .indexS div  {flex: 50%;}
+.imageLeft{padding: .5rem;}
+.indexF{margin-bottom: 3.5rem;}
+.indexF, .indexS {
+    position: sticky; top: 1.45rem; 
+    align-self: flex-start;
+}
+.indexS{
+   background-color: white; height: 26.5rem;
+}
+.photoInfo > div {padding-top: 3rem;}
+.codeInfo, .photoInfo{
+    margin-top: 4rem;
+}
+
+.codeInfo ul, .photoInfo > ul {list-style-type: none; padding: 1rem;}
+.codeInfo ul > li:nth-child(1), .photoInfo > ul > li:nth-child(1){
+    text-align: center; font-family: 'Crimson Text', serif;
+    font-size: 1.5rem; font-weight: bold;
+}
+.codeInfo ul > li:nth-child(2), .photoInfo > ul > li:nth-child(2){
+    text-align: center; font-family: 'Crimson Text', serif;
+    font-size: 1.15rem; margin-top: 4rem;
+}
+.photosContainer, .indexF, .indexS{
+    display: flex; flex-wrap: wrap; 
+    padding: 0rem 1rem;
 }
 .column{
     flex: 25%; max-width: 25%;
@@ -132,4 +154,72 @@ button:hover{
     margin-top: .5rem; vertical-align: middle;
     width: 100%;
 }
-
+/*****  404 PAGE  *****/
+.errorContainer{ 
+    max-width: 26.25rem; margin: 0 auto;
+    padding: 1rem; height: 20rem;
+}
+.errorContainer > p {margin-top: 3rem; margin-bottom: 3rem;}
+.errorContainer > div > a {color: #212322; margin: 0;}
+.errorContainer > div {text-align: left; padding: 1rem;}
+/*****  MENU CONFIG  *****/
+.bm-burger-button {
+    display: none;
+    float: right;
+    width: 2.25rem;
+    height: 2rem;
+    left: 2.25rem;
+    top: 1rem;
+    position: absolute;
+  }
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+    display: none;
+  } 
+  .bm-cross {
+    background: whitesmoke;
+  }
+  .bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+  }
+  .bm-menu {
+    background: #212322;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+}
+.bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+}
+.bm-item {
+    display: inline-block;
+  }
+.right .bm-burger-button {
+    left: initial; right: 2.25rem;
+}
+/*****  BUTTON TO TOP  *****/
+.customButton {
+    position: fixed;
+    right: -100px;
+    bottom: 6rem;
+    transition: right 0.5s;
+    cursor: pointer;
+    background-color: rgba(50, 50, 50, 0.5);
+    font-size: 20px;
+    padding: 10px;
+    height: 3.625rem;
+    width: 3.625rem;
+  }
+.transition {right: 20px;}
+.customButton > img{height: 2.5rem; width: 2.5rem; position: relative; top: 0rem;}
+/*****  ABOUT PAGE  *****/
+.aboutInfo{max-width: 80%; margin: 0 auto; margin-top: 4.5rem;}
+.aboutInfo > ul > li{
+    margin-top: 2rem; font-family: "Crimson Text", serif;
+    font-size: 1.1rem; color: #363a38;
+}
+.aboutInfo > ul {list-style-type: none;}
+.aboutInfo > ul > li:nth-child(2), .aboutInfo > ul >li:nth-child(3), .aboutInfo > ul >li:nth-child(5), .aboutInfo > ul >li:nth-child(7), .aboutInfo > ul >li:nth-child(9){font-weight: bold;}
+.aboutInfo > ul >li:nth-child(4),.aboutInfo > ul >li:nth-child(6),.aboutInfo > ul >li:nth-child(8),.aboutInfo > ul >li:nth-child(10){padding-left: .5rem;}
+.aboutInfo > ul > li:nth-child(10) {margin-bottom: 4.5rem;}

@@ -6,13 +6,13 @@ const ImagesC1 = () => {
     const data = useStaticQuery(
         graphql`
         query {
-            romeP: file(relativePath: { eq: "romeP.jpg" }) {
+            romeP: file(relativePath: { eq: "images/romeP.jpg" }) {
                ...ImageSettings
             }
-            cantabriaB: file(relativePath: { eq: "cantabriaB.jpg" }) {
+            cantabriaB: file(relativePath: { eq: "images/cantabriaB.jpg" }) {
                 ...ImageSettings
             }
-            whiteLiesC: file(relativePath: { eq: "whiteLiesC.jpg" }) {
+            whiteLiesC: file(relativePath: { eq: "images/whiteLiesC.jpg" }) {
                 ...ImageSettings
             }
         }`
