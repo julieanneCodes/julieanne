@@ -4,24 +4,18 @@ import React from "react"
 import MenuB from "./BurgerMenu"
 import HeaderLinks from "./headerLinks"
 const Header = ({ siteTitle }) => (
-  <header
+  <header className="headerC headerAtSeven headerAtFour"
     style={{
       background: `#212322`,
-      marginBottom: `1.45rem`,
-      textAlign: `center`,
-      /*position: `sticky`,
-      top: `0`,
-      zIndex: `1`,*/
     }}
   >
-    <div className="titleBox"
+    <div className="titleBox titleBoxAtSeven titleBoxAtFour titleBoxAtThree"
       style={{
         margin: `0 auto`,
         maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }} id="headerTitle">
+      <h1 class="headerTitle headerTitleAtSeven headerTitleAtFour headerTitleAtTh">
         <Link
           to="/"
           style={{

@@ -6,7 +6,7 @@ const HeaderLinks = () => {
 
     return (
         <>
-            <div id="links">
+            <div class="links linksAtSeven">
                 <Link to="/code/">Code / Programación</Link>
                 <Link to="/photography/">Photography / Fotografía</Link>
                 <Link to="/contact/">Contact / Contacto</Link>

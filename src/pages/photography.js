@@ -7,10 +7,10 @@ import ImagesC4 from "../components/imagesC4"
 const PhotographyPage =() => (
         <Layout>
             <div className="photosContainer">
-                <div className="column"><ImagesC1/></div>
-                <div className="column"><ImagesC2/></div>
-                <div className="column"><ImagesC3/></div>
-                <div className="column"><ImagesC4/></div>
+                <div className="column columnAtFour"><ImagesC1/></div>
+                <div className="column columnAtFour"><ImagesC2/></div>
+                <div className="column columnAtFour"><ImagesC3/></div>
+                <div className="column columnAtFour"><ImagesC4/></div>
             </div>
         
         </Layout>

@@ -5,61 +5,116 @@
 }
 /*****  MEDIA QUERYS  *****/
 @media only screen and (max-width:768px) {
-    #links a, .logos{display: none;}
-    .titleBox{
-        margin: 0 !important; display: inline-block; 
-        width: 50% !important;
+    .links a, .logos{display: none;}
+    .titleBox.titleBoxAtSeven{
+        margin: 0 ; display: inline-block; 
+        width: 50%;
     }
-    .bm-menu > .bm-item-list > #links > a, .bm-menu > .bm-item-list .logos {display: inline-block !important;}
-    #links button{display: block !important; width: 100% !important;}
-    #headerTitle{font-size: 1.5rem;}
+    .bm-menu > .bm-item-list > .links > a, .bm-menu > .bm-item-list .logos {display: inline-block !important;}
+    .links.linksAtSeven button{display: block; width: 100%;}
+    .headerTitle.headerTitleAtSeven{font-size: 1.5rem;}
     .menuH{margin-bottom: 2rem; padding-top: 1.45rem;}
-    header{text-align: unset !important;}
-    #links{padding: 0rem 2rem 0rem 0rem !important;}
+    .headerC.headerAtSeven {text-align: unset; position: sticky; top:0; z-index: 1;}
+    .customButton.customButtonAtSeven{display: none;}
+    .links.linksAtSeven{padding: 0rem 2rem 0rem 0rem;}
     .svg{float: right;}
     .bm-burger-button {display: block !important;}
 }
-@media only screen and (max-width:425px) {
-    .titleBox{width: 75% !important; padding: .2rem !important;}
-    .column {
-        flex: 50% !important;
-        max-width: 50% !important;
+@media only screen and (min-width:425px) and (max-width:767px){
+    .titleBox.titleBoxAtFour{width: 75%; padding: .2rem;}
+    .column.columnAtFour{
+        flex: 50%;
+        max-width: 50%;
     }
     .contactText{padding: 0rem 1.5rem 0rem 1.5rem;}
-    #headerTitle{font-size: 1.25rem !important; margin-top: 1.5rem !important;}
-    header{height: 4rem;}
-    .customButton{display: none !important;}
-    .aboutInfo > ul {padding-left: 0rem !important;}
-    .aboutInfo{margin-top: 3rem !important;}
+    .headerTitle.headerTitleAtFour{font-size: 1.25rem; margin-top: 1.5rem;}
+    .headerC.headerAtFour{height: 4rem;}
+    .aboutInfo.aboutInfoAtFour > ul {padding-left: 0rem;}
+    .aboutInfo.aboutInfoAtFour{margin-top: 3rem;}
+    .indexF.indexFAtFour, .indexS.indexSAtFour{display: inline-block;}
+    .indexF.indexAtFour{margin-bottom: 0rem; top: 5.45rem;}
+    .photoInfo.photoInfoAtFour{margin-top: 0rem;}
+    .indexS.indexSAtFour{
+        height: 38rem; margin-bottom: 2rem; 
+        top: 0rem; margin-top: .6rem;
+    }
 }
-@media only screen and (max-width: 375px) {
-    #headerTitle {font-size: 1.25rem !important;}
-    .titleBox{width: 75% !important; padding: .2rem !important;}
+@media only screen and (min-width: 375px) and (max-width:410px) {
+    .headerC.headerAtFour{height: 4rem;}
+    .headerTitle.headerTitleAtTh{font-size: 1.25rem; margin-top: 1.5rem;}
+    .titleBox.titleBoxAtThree{width: 75%; padding: .2rem;}
+    .indexS.indexSAtThree, .indexF.indexFAtThree{display: inline-block;}
+    .indexS.indexSAtThree{
+        height: 26rem; margin-bottom: 2rem; 
+        top: 0rem; margin-top: .6rem;
+    }
+    .indexF.indexFAtThree{top:5.45rem;}
+}
+@media only screen and (min-width: 411px) and (max-width: 424px){
+    .indexS.indexSAtEleven{
+        height: 33rem; margin-bottom: 2rem; 
+        top: 0rem;
+    }
+    .indexS.indexSAtThree, .indexF.indexFAtThree{display: inline-block;}
+    .indexF.indexFAtEleven{top: 7.5rem;}
+    .titleBox.titleBoxAtFour{width: 75%; padding: .2rem;}
+    .headerC.headerAtFour{height: 4.2rem; margin-bottom: 0rem;}
+    .headerTitle.headerTitleAtFour{font-size: 1.25rem; margin-top: 1.5rem;}
 
 }
-@media only screen and (max-width: 1024px){
+@media only screen and (min-width: 375px) and (min-height: 812px) {
+        .indexF.indexFAtFour{
+            margin-bottom: 7rem; margin-top: 2.5rem;
+            top: 7.5rem;
+        }
+        .indexS.indexSAtFour{height: 40rem;}
+        .indexS.indexSAtFour .imageRight{margin-top: 4rem;}
+}
+@media only screen and (min-width: 1280px){
+    .indexF{
+        margin-bottom: 13.5rem !important; margin-top: 4rem !important;
+    }
+    .indexF, .indexS {top: 4rem !important;}
+    .indexS{height: 38.5rem !important;}
+
+}
+@media only screen and (min-width: 1366px){
+    .indexF{margin-bottom: 9.8rem !important;}
+    .indexS{height: 36.5rem !important;}
+}
+@media only screen and (min-width: 1440px){
+    .indexF{margin-bottom: 15.5rem !important; margin-top: 5rem !important;}
+    .indexS{height: 45rem !important;}
+}
+@media only screen and (min-width: 1197px) and (max-width: 1279px){
+    .indexF{margin-bottom: 3.5rem !important;}
+    .indexS{height: 26.5rem !important;}
+}
+/*@media only screen and (max-width: 1024px){
     .indexF{margin-bottom: 8.7rem !important;}
     .indexF, .indexS {
-        top: 1.45rem !important; 
+        top: 1.45rem; 
     }
     .indexS{
         height: 28.5rem !important;
     }
-}
-
-body{margin: 0; width: 100%;}
+}*/
+.headerC{margin-bottom: 1.45rem;}
+.headerTitle{margin: 0;}
+.titleBox{padding: 1.45rem 1.0875rem}
+body{margin: 0rem; width: 100%; height: auto;}
 a{
     color: whitesmoke; margin: 1.5rem;
 }
 footer{
-    background-color: #212322; color: whitesmoke; 
+    color: #212322;
     padding: 3rem; margin-top: 1rem;
 }
-#links{
+.links{
     padding-bottom: 1.5rem; display: inline-block; 
     padding-left: 5.5rem;
 }
-#links a{
+.links a{
     text-decoration: none; margin-left: 1.5rem; 
     margin-right: 0rem; font-family: 'Crimson Text', sans-serif;
 }
@@ -68,10 +123,11 @@ footer{
 }
 .logos{float: right;}
 .logos a{margin: 1rem;}
-#links a:hover{text-decoration: underline;}
+.links a:hover{text-decoration: underline;}
 #nombreC{float: right;}
 #inLogo{margin-right: 3rem;}
-#headerTitle{font-family: 'Julius Sans One',sans-serif;}
+.headerTitle{font-family: 'Julius Sans One',sans-serif;}
+.headerC{text-align: center;}
 
 /*****  FORM  *****/
 .form{
@@ -116,17 +172,17 @@ button{
 button:hover{
     background-color: #212322; color: whitesmoke;
 }
-#links button { display: none;}
+.links button { display: none;}
 /*****  INDEX PAGE AND PHOTOGRAPHY PAGE  *****/
 .indexF div, .indexS div  {flex: 50%;}
 .imageLeft{padding: .5rem;}
-.indexF{margin-bottom: 3.5rem;}
+.indexF{margin-bottom: 8.7rem;}
 .indexF, .indexS {
     position: sticky; top: 1.45rem; 
     align-self: flex-start;
 }
 .indexS{
-   background-color: white; height: 26.5rem;
+   background-color: white; height: 28.5rem;
 }
 .photoInfo > div {padding-top: 3rem;}
 .codeInfo, .photoInfo{
@@ -220,6 +276,8 @@ button:hover{
     font-size: 1.1rem; color: #363a38;
 }
 .aboutInfo > ul {list-style-type: none;}
-.aboutInfo > ul > li:nth-child(2), .aboutInfo > ul >li:nth-child(3), .aboutInfo > ul >li:nth-child(5), .aboutInfo > ul >li:nth-child(7), .aboutInfo > ul >li:nth-child(9){font-weight: bold;}
+.aboutInfo > ul > li:nth-child(1), .aboutInfo > ul > li:nth-child(2), .aboutInfo > ul >li:nth-child(4), .aboutInfo > ul >li:nth-child(5), .aboutInfo > ul >li:nth-child(7), .aboutInfo > ul >li:nth-child(9), .aboutInfo > ul > li:nth-child(11){font-weight: bold;}
 .aboutInfo > ul >li:nth-child(4),.aboutInfo > ul >li:nth-child(6),.aboutInfo > ul >li:nth-child(8),.aboutInfo > ul >li:nth-child(10){padding-left: .5rem;}
 .aboutInfo > ul > li:nth-child(10) {margin-bottom: 4.5rem;}
+.aboutInfo > ul > li:nth-child(1){font-size: 2rem; text-align: center;}
+.aboutInfo > ul > li:nth-child(2){text-align: center; font-size: 1.5rem;}

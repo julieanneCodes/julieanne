@@ -12,20 +12,31 @@ const ImagesC4 = () => {
             brian: file(relativePath: { eq: "images/brian.jpg" }) {
                 ...ImageSettings
             }
-            tomyM: file(relativePath: { eq: "images/tomyM.jpg" }) {
+            romeB: file(relativePath: { eq: "images/romeB.jpg" }) {
                 ...ImageSettings
             }
-            romeB: file(relativePath: { eq: "images/romeB.jpg" }) {
+            romeS: file(relativePath: { eq: "images/romeS.jpg" }) {
+                ...ImageSettings
+            }
+            hideAngel: file(relativePath: { eq: "images/hideAngel.jpg" }) {
+                ...ImageSettings
+            }
+            phoebe: file(relativePath: { eq: "images/phoebe.jpg" }) {
+                ...ImageSettings
+            }
+            cantabriaM: file(relativePath: { eq: "images/cantabriaM.jpg" }) {
                 ...ImageSettings
             }
         }`
     )
     return (
         <>
+            <Img fluid={data.romeS.childImageSharp.fluid}/>
             <Img fluid={data.portoBridge.childImageSharp.fluid} alt="Porto brigde"/>
-            <Img fluid={data.brian.childImageSharp.fluid}/>
-            <Img fluid={data.tomyM.childImageSharp.fluid}/>
+            <Img fluid={data.hideAngel.childImageSharp.fluid}/>
             <Img fluid={data.romeB.childImageSharp.fluid}/>
+            <Img fluid={data.phoebe.childImageSharp.fluid}/>
+            <Img fluid={data.cantabriaM.childImageSharp.fluid}/>
         </>
     )
 }

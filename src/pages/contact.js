@@ -26,7 +26,8 @@ const ContactPage = () =>{
                     <h3>{data.site.siteMetadata.email}</h3>
                 </div>
                 
-                <form method="post" action="#" class="form">
+                <form name="contact" method="post" data-netlify-honeypot="bot-field" data-netlify="true" class="form">
+                    <input type="hidden" name="form-name" value="contact"/>
                     <div className="formGroup">
                         <label>
                             <span>Name / Nombre</span>

@@ -18,7 +18,7 @@ const IndexLayout = () => {
     return (
     <>
     <div className="indexContainer">
-        <div className="indexF">
+        <div className="indexF indexFAtFour indexFAtThree indexFAtFout indexFAtTw indexFAtThr indexFAtFoth indexFAtOneT indexFAtEleven">
             <div className="imageLeft">
                 <Img fluid={data.code.childImageSharp.fluid}/>
             </div>
@@ -31,8 +31,8 @@ const IndexLayout = () => {
             
             </div>
         </div>
-        <div className="indexS">
-            <div className="photoInfo">
+        <div className="indexS indexSAtFour indexSAtThree indexSAtFour indexSAtTw indexSAtThr indexSAtFoth indexSAtOneT indexSAtEleven">
+            <div className="photoInfo photoInfoAtFour">
                 <ul>{JSONDataP.content.map((data,index) => {
                 return <li key={`content_item_${index}`}>{data.item}</li>
                 })}
