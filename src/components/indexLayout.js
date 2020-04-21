@@ -1,8 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from 'gatsby-image'
-import JSONData from "../content/indexInfo.json"
-import JSONDataP from "../content/indexInfoP.json"
+import JSONData from "../content/IndexInfo.json"
+import JSONDataP from "../content/IndexInfoP.json"
 const IndexLayout = () => {
     const data = useStaticQuery(
         graphql`

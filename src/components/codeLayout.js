@@ -3,7 +3,7 @@ import Modal from 'react-bootstrap/Modal'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import JSONDataCode from '../content/pagesInfo.json'
+import JSONDataCode from '../content/PagesInfo.json'
 import CodeImg from '../../static/images/code2.jpg'
 const CodeLayout = () => {
 
