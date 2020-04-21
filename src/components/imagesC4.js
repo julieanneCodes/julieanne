@@ -9,9 +9,6 @@ const ImagesC4 = () => {
             portoBridge: file(relativePath: { eq: "images/portoBridge.jpg" }) {
                 ...ImageSettings
             }
-            brian: file(relativePath: { eq: "images/brian.jpg" }) {
-                ...ImageSettings
-            }
             romeB: file(relativePath: { eq: "images/romeB.jpg" }) {
                 ...ImageSettings
             }

@@ -1,0 +1,23 @@
+{
+    "title": "Code pages info",
+    "content": [
+        {
+            "item": "Languaje / Lenguaje:"
+        },
+        {
+            "item": "Javascript"
+        },
+        {
+            "item": "Library and Framework / Librería y Framework:"
+        },
+        {
+            "item": "React and Gatsby"
+        },
+        {
+            "item": "Design / Diseño:"
+        },
+        {
+            "item": "CSS3 (mostly) and Bootstrap"
+        }
+    ]
+}

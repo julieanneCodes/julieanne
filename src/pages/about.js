@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import JSONData from "../content/AboutInfo.json"
+import JSONData from "../content/aboutInfo.json"
 const AboutPage = () => (
     <Layout>
         <div className="aboutInfo aboutInfoAtFour">

@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import Button from 'react-bootstrap/Button'
 import Layout from "../components/layout"
 
 const ContactPage = () =>{
@@ -46,7 +47,7 @@ const ContactPage = () =>{
                             <textarea name="message" id="message" rows="5" />
                         </label>
                     </div>
-                    <button type="submit">Send / Enviar</button>
+                    <Button type="submit" variant="outline-dark">Send / Enviar</Button>
                 </form>
             </Layout>
         )

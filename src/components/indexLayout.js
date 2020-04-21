@@ -1,8 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from 'gatsby-image'
-import JSONData from "../content/IndexInfo.json"
-import JSONDataP from "../content/IndexInfoP.json"
+import JSONData from "../content/indexInfo.json"
+import JSONDataP from "../content/indexInfoP.json"
 const IndexLayout = () => {
     const data = useStaticQuery(
         graphql`
@@ -18,7 +18,7 @@ const IndexLayout = () => {
     return (
     <>
     <div className="indexContainer">
-        <div className="indexF indexFAtFour indexFAtThree indexFAtFout indexFAtTw indexFAtThr indexFAtFoth indexFAtOneT indexFAtEleven">
+        <div className="indexF indexFAtFour indexFAtThree indexFAtFout indexFAtTw indexFAtThr indexFAtFoth indexFAtOneT indexFAtEleven indexFAtSeven">
             <div className="imageLeft">
                 <Img fluid={data.code.childImageSharp.fluid}/>
             </div>
@@ -31,7 +31,7 @@ const IndexLayout = () => {
             
             </div>
         </div>
-        <div className="indexS indexSAtFour indexSAtThree indexSAtFour indexSAtTw indexSAtThr indexSAtFoth indexSAtOneT indexSAtEleven">
+        <div className="indexS indexSAtFour indexSAtThree indexSAtFour indexSAtTw indexSAtThr indexSAtFoth indexSAtOneT indexSAtEleven indexSAtSeven">
             <div className="photoInfo photoInfoAtFour">
                 <ul>{JSONDataP.content.map((data,index) => {
                 return <li key={`content_item_${index}`}>{data.item}</li>
