@@ -8,11 +8,12 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: `Julieanne codes`,
-    description: `Julieanne's web page, code and photography`,
+    titleTemplate: `%s | Julieanne Codes`,
+    description: `Julieanne's web page. Web development, design and photography`,
     author: `Juliana Ordóñez M. 2020`,
     email: `j.o.131502@gmail.com`,
     alter: `Julieanne.`,
-    image: `${__dirname}/static/images/th.jpg`,
+    image: `/images/th.jpg`,
     baseUrl: `https://www.julieannecodes.com`,
     contactText: `For inquires please email the address below or fill the contact form / Para cualquier pregunta, por favor envíe un correo a la dirección de email o rellene el formulario de contacto.`,
 
