@@ -24,6 +24,7 @@
         max-width: 50%;
     }*/
     .contactText{padding: .5rem;}
+    .aboutInfo.aboutInfoAtFour > ul {padding-left: 0rem;}
 }
 @media only screen and (max-width:768px){
     .columnCode.columnCodeLite{
@@ -117,7 +118,7 @@
 }
 @media only screen and (min-width: 320px) and (max-width: 374px){
     .titleBox.titleBoxAtThree{width: 80%;}
-    .titleBox.titleBoxAtThree > h1 {font-size: 1.2rem;}
+    .titleBox.titleBoxAtThree > h1 {font-size: 1.1rem;}
     .indexF.indexFAtThree, .indexS.indexSAtThree{display: block;}
 }
 .headerC{margin-bottom: 1.45rem;}
