@@ -6,7 +6,7 @@ import HeaderLinks from "./headerLinks"
 const Header = ({ siteTitle }) => (
   <header className="headerC headerAtSeven headerAtFour"
     style={{
-      background: `#212322`,
+      background: `white`,
     }}
   >
     <div className="titleBox titleBoxAtSeven titleBoxAtFour titleBoxAtThree"
@@ -15,11 +15,11 @@ const Header = ({ siteTitle }) => (
         maxWidth: 960,
       }}
     >
-      <h1 class="headerTitle headerTitleAtSeven headerTitleAtFour headerTitleAtTh">
+      <h1 className="headerTitle headerTitleAtSeven headerTitleAtFour headerTitleAtTh">
         <Link
           to="/"
           style={{
-            color: `white`,
+            color: `#212322`,
             textDecoration: `none`,
           }}
         >

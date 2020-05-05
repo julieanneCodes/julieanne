@@ -126,14 +126,14 @@
 .titleBox{padding: 1.45rem 1.0875rem}
 body{margin: 0rem; width: 100%; height: auto;}
 a{
-    color: whitesmoke !important; margin: 1.5rem;
+    color: #212322 !important; margin: 1.5rem;
 }
 footer{
     color: #212322;
     padding: 3rem; margin-top: 1rem;
 }
 .links{
-    padding-bottom: 1.5rem; display: inline-block; 
+    padding-bottom: 1.5rem; display: inline-grid; 
     padding-left: 5.5rem;
 }
 .links a{
@@ -188,12 +188,9 @@ footer{
 }
 .contactText > h4, .contactEmail > h3{margin-top: 0;font-weight: 600 !important; font-size: 1.1rem !important; font-family: initial !important;}
 button{ 
-    height: 3rem; border: 1px solid #212322; 
+    height: 3rem; border: 1px solid white; 
     background-color: inherit; cursor: pointer;
     border-radius: .25rem;
-}
-button:hover{
-    background-color: #212322; color: whitesmoke;
 }
 .links button { display: none;}
 .formGroup > div {display: block;}
@@ -265,12 +262,12 @@ button:hover{
     height: 100%;
   }
   .bm-menu {
-    background: #212322;
+    background: white;
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
 }
 .bm-overlay {
-    background: rgba(0, 0, 0, 0.3);
+    background: white !important;
 }
 .bm-item {
     display: inline-block;
