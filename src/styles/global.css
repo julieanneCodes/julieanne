@@ -16,7 +16,7 @@
     .menuH{margin-bottom: 2rem; padding-top: 1.45rem;}
     .headerC.headerAtSeven {text-align: unset; position: sticky; top:0; z-index: 1;}
     .customButton.customButtonAtSeven{display: none;}
-    .links.linksAtSeven{padding: 0rem 2rem 0rem 0rem;}
+    .links.linksAtSeven{padding: 0rem 2rem 0rem 0rem; display: inline-grid;}
     .svg{float: right;}
     .bm-burger-button {display: block !important;}
     /*.column.columnAtFour{
@@ -133,7 +133,7 @@ footer{
     padding: 3rem; margin-top: 1rem;
 }
 .links{
-    padding-bottom: 1.5rem; display: inline-grid; 
+    padding-bottom: 1.5rem; display: inline-block; 
     padding-left: 5.5rem;
 }
 .links a{
