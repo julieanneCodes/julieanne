@@ -134,7 +134,7 @@ footer{
     padding: 3rem; margin-top: 1rem;
 }
 .links{
-    padding-bottom: 1.5rem; display: inline-block;
+    display: inline-block;
     margin: 0 auto; margin-left: 12rem;
     
 }
@@ -225,6 +225,7 @@ button{
     display: flex; flex-wrap: wrap; 
     padding: 0rem 1rem;
 }
+.indexF{margin-top: 1.5rem;}
 .column{
     flex: 25%; max-width: 25%;
     padding: 0 .30rem;
