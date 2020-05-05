@@ -121,6 +121,7 @@
     .titleBox.titleBoxAtThree{width: 80%;}
     .titleBox.titleBoxAtThree > h1 {font-size: 1.1rem;}
     .indexF.indexFAtThree, .indexS.indexSAtThree{display: block;}
+    .column.columnAtFour{flex: 50%; max-width: 50%;}
 }
 .headerC{margin-bottom: 1.45rem;}
 .headerTitle{margin: 0;}
