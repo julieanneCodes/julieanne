@@ -26,6 +26,7 @@
     }*/
     .contactText{padding: .5rem;}
     .aboutInfo.aboutInfoAtFour > ul {padding-left: 0rem;}
+    .indexF.indexFAtSeven{position: relative;}
 }
 @media only screen and (max-width:768px){
     .columnCode.columnCodeLite{
@@ -45,7 +46,7 @@
     .aboutInfo.aboutInfoAtFour > ul {padding-left: 0rem;}
     .aboutInfo.aboutInfoAtFour{margin-top: 3rem;}
     .indexF.indexFAtFour, .indexS.indexSAtFour{display: inline-block;}
-    .indexF.indexAtFour{margin-bottom: 0rem; top: 5.45rem;}
+    .indexF.indexAtFour{margin-bottom: 0rem; top: 5.45rem; position: sticky;}
     .photoInfo.photoInfoAtFour{margin-top: 0rem;}
     .indexS.indexSAtFour{
         height: 38rem; margin-bottom: 2rem; 
@@ -61,7 +62,7 @@
         height: 26rem; margin-bottom: 2rem; 
         top: 0rem; margin-top: .6rem;
     }
-    .indexF.indexFAtThree{top:5.45rem;}
+    .indexF.indexFAtThree{top:5.45rem; position: sticky;}
     .column.columnAtFour{
         flex: 50%;
         max-width: 50%;
@@ -74,7 +75,7 @@
         top: 0rem;
     }
     .indexS.indexSAtThree, .indexF.indexFAtThree{display: inline-block;}
-    .indexF.indexFAtEleven{top: 7.5rem;}
+    .indexF.indexFAtEleven{top: 7.5rem; position: sticky;}
     .titleBox.titleBoxAtFour{width: 75%; padding: .2rem;}
     .headerC.headerAtFour{height: 4.2rem; margin-bottom: 0rem;}
     .headerTitle.headerTitleAtFour{font-size: 1.25rem; margin-top: 1.5rem;}
@@ -87,7 +88,7 @@
 @media only screen and (min-width: 375px) and (min-height: 812px) {
         .indexF.indexFAtFour{
             margin-bottom: 7rem; margin-top: 2.5rem;
-            top: 7.5rem;
+            top: 7.5rem; position: sticky;
         }
         .indexS.indexSAtFour{height: 40rem;}
         .indexS.indexSAtFour .imageRight{margin-top: 4rem;}
@@ -97,7 +98,7 @@
         margin-bottom: 13rem; margin-top: 4rem;
     }
     .indexF.indexFAtTw, .indexSAtTw {top: 4rem;}
-    .indexS.indexSAtTw{height: 38.6rem;}
+    .indexS.indexSAtTw{height: 39.5rem;}
 
 }
 @media only screen and (min-width: 1366px) and (max-width:1439px) {
@@ -110,8 +111,8 @@
     .photoInfo > ul{margin-top: 5rem;}
 }
 @media only screen and (min-width: 1197px) and (max-width: 1279px){
-    .indexF.indexFAtOneT{margin-bottom: 3.5rem;}
-    .indexS.indexSAtOneT{height: 26.5rem;}
+    .indexF.indexFAtOneT{margin-bottom: 4rem;}
+    .indexS.indexSAtOneT{height: 27rem;}
 }
 @media only screen and (min-width: 768px) and (min-height: 1024px){
     .indexF.indexFAtSeven, .indexS.indexSAtSeven{position: relative;}
@@ -120,8 +121,9 @@
 @media only screen and (min-width: 320px) and (max-width: 374px){
     .titleBox.titleBoxAtThree{width: 80%;}
     .titleBox.titleBoxAtThree > h1 {font-size: 1.1rem;}
-    .indexF.indexFAtThree, .indexS.indexSAtThree{display: block;}
+    .indexF.indexFAtThree, .indexS.indexSAtThree{display: block; position: sticky;}
     .column.columnAtFour{flex: 50%; max-width: 50%;}
+    .indexS.indexSAtThree{height: 25rem;}
 }
 .headerC{margin-bottom: 1.45rem;}
 .headerTitle{margin: 0;}
@@ -201,13 +203,13 @@ button{
 /*****  INDEX PAGE AND PHOTOGRAPHY PAGE  *****/
 .indexF div, .indexS div  {flex: 50%;}
 /*.imageLeft{padding: .5rem;}*/
-.indexF{margin-bottom: 8.7rem;}
+.indexF{margin-bottom: 9.5rem; width: 100%;}
 .indexF, .indexS {
     position: sticky; top: 1.45rem; 
     align-self: flex-start;
 }
 .indexS{
-   background-color: white; height: 28.7rem;
+   background-color: white; height: 29.3rem;
    width: 100%;
 }
 .photoInfo > div {padding-top: 3rem;}
