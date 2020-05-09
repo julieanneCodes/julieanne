@@ -207,6 +207,7 @@ button{
 }
 .indexS{
    background-color: white; height: 28.7rem;
+   width: 100%;
 }
 .photoInfo > div {padding-top: 3rem;}
 .codeInfo, .photoInfo{
