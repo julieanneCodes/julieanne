@@ -197,9 +197,10 @@ button{
 }
 .links button { display: none;}
 .formGroup > div {display: block;}
+.customWidth{width: 30%;}
 /*****  INDEX PAGE AND PHOTOGRAPHY PAGE  *****/
 .indexF div, .indexS div  {flex: 50%;}
-.imageLeft{padding: .5rem;}
+/*.imageLeft{padding: .5rem;}*/
 .indexF{margin-bottom: 8.7rem;}
 .indexF, .indexS {
     position: sticky; top: 1.45rem; 
@@ -300,7 +301,7 @@ button{
 .aboutInfo > ul, .codeList {list-style-type: none;}
 .aboutInfo > ul > li:nth-child(1), .aboutInfo > ul > li:nth-child(2), .aboutInfo > ul >li:nth-child(4), .aboutInfo > ul >li:nth-child(5), .aboutInfo > ul >li:nth-child(7), .aboutInfo > ul >li:nth-child(9), .aboutInfo > ul > li:nth-child(11){font-weight: bold;}
 .aboutInfo > ul >li:nth-child(4),.aboutInfo > ul >li:nth-child(6),.aboutInfo > ul >li:nth-child(8),.aboutInfo > ul >li:nth-child(10){padding-left: .5rem;}
-.aboutInfo > ul > li:nth-child(10) {margin-bottom: 4.5rem;}
+/*.aboutInfo > ul > li:nth-child(10) {margin-bottom: 4.5rem;}*/
 .aboutInfo > ul > li:nth-child(1){font-size: 2rem; text-align: center;}
 .aboutInfo > ul > li:nth-child(2){text-align: center; font-size: 1.5rem;}
 /*****  CODE PAGE  *****/
