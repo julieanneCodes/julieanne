@@ -24,9 +24,6 @@ const ImagesC4 = () => {
             cantabriaM: file(relativePath: { eq: "images/cantabriaM.jpg" }) {
                 ...ImageSettings
             }
-            ignacio2: file(relativePath: { eq: "images/ignacio2.jpg" }) {
-                ...ImageSettings
-            }
         }`
     )
     return (
@@ -37,7 +34,6 @@ const ImagesC4 = () => {
             <Img fluid={data.romeB.childImageSharp.fluid}/>
             <Img fluid={data.phoebe.childImageSharp.fluid}/>
             <Img fluid={data.cantabriaM.childImageSharp.fluid}/>
-            <Img fluid={data.ignacio2.childImageSharp.fluid}/>
         </>
     )
 }
