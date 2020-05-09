@@ -12,7 +12,10 @@ const ImagesC2 = () => {
             angel: file(relativePath: { eq: "images/angel.jpg" }) {
                 ...ImageSettings
             }
-            flowers: file(relativePath: { eq: "images/flowers.jpg" }) {
+            mariachi: file(relativePath: { eq: "images/mariachi.jpg" }) {
+                ...ImageSettings
+            }
+            ignacio: file(relativePath: { eq: "images/ignacio.jpg" }) {
                 ...ImageSettings
             }
             whiteLiesC: file(relativePath: { eq: "images/whiteLiesC.jpg" }) {
@@ -26,7 +29,8 @@ const ImagesC2 = () => {
     return (
         <>
             <Img fluid={data.whiteLiesC.childImageSharp.fluid}/>
-            <Img fluid={data.flowers.childImageSharp.fluid}/>
+            <Img fluid={data.mariachi.childImageSharp.fluid}/>
+            <Img fluid={data.ignacio.childImageSharp.fluid}/>
             <Img fluid={data.duck.childImageSharp.fluid}/>
             <Img fluid={data.angel.childImageSharp.fluid}/>
             <Img fluid={data.romeC.childImageSharp.fluid}/>

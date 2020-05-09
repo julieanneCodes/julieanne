@@ -7,7 +7,7 @@ const IndexLayout = () => {
     const data = useStaticQuery(
         graphql`
         query {
-            hideAngel: file(relativePath: { eq: "images/hideAngel.jpg" }) {
+            phoebe2: file(relativePath: { eq: "images/phoebe2.jpg" }) {
                ...ImageSettings
             }
             code: file(relativePath: { eq: "images/code1.jpg" }) {
@@ -39,7 +39,7 @@ const IndexLayout = () => {
                 </ul>
             </div>
             <div className="imageRight">
-                <Img fluid={data.hideAngel.childImageSharp.fluid}/>
+                <Img fluid={data.phoebe2.childImageSharp.fluid}/>
             </div>
         </div>
     </div>
