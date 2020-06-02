@@ -7,7 +7,7 @@ const IndexLayout = () => {
     const data = useStaticQuery(
         graphql`
         query {
-            hideAngel: file(relativePath: { eq: "images/hideAngel.jpg" }) {
+            phoebeIndex: file(relativePath: { eq: "images/phoebeIndex.jpg" }) {
                ...ImageSettings
             }
             code: file(relativePath: { eq: "images/code1.jpg" }) {
@@ -18,7 +18,7 @@ const IndexLayout = () => {
     return (
     <>
     <div className="indexContainer">
-        <div className="indexF indexFAtFour indexFAtThree indexFAtFout indexFAtTw indexFAtThr indexFAtFoth indexFAtOneT indexFAtEleven">
+        <div className="indexF indexFAtFour indexFAtThree indexFAtFout indexFAtTw indexFAtThr indexFAtFoth indexFAtOneT indexFAtEleven indexFAtSeven">
             <div className="imageLeft">
                 <Img fluid={data.code.childImageSharp.fluid}/>
             </div>
@@ -31,7 +31,7 @@ const IndexLayout = () => {
             
             </div>
         </div>
-        <div className="indexS indexSAtFour indexSAtThree indexSAtFour indexSAtTw indexSAtThr indexSAtFoth indexSAtOneT indexSAtEleven">
+        <div className="indexS indexSAtFour indexSAtThree indexSAtFour indexSAtTw indexSAtThr indexSAtFoth indexSAtOneT indexSAtEleven indexSAtSeven">
             <div className="photoInfo photoInfoAtFour">
                 <ul>{JSONDataP.content.map((data,index) => {
                 return <li key={`content_item_${index}`}>{data.item}</li>
@@ -39,7 +39,7 @@ const IndexLayout = () => {
                 </ul>
             </div>
             <div className="imageRight">
-                <Img fluid={data.hideAngel.childImageSharp.fluid}/>
+                <Img fluid={data.phoebeIndex.childImageSharp.fluid}/>
             </div>
         </div>
     </div>

@@ -6,7 +6,7 @@ import HeaderLinks from "./headerLinks"
 const Header = ({ siteTitle }) => (
   <header className="headerC headerAtSeven headerAtFour"
     style={{
-      background: `#212322`,
+      background: `white`,
     }}
   >
     <div className="titleBox titleBoxAtSeven titleBoxAtFour titleBoxAtThree"
@@ -15,11 +15,11 @@ const Header = ({ siteTitle }) => (
         maxWidth: 960,
       }}
     >
-      <h1 class="headerTitle headerTitleAtSeven headerTitleAtFour headerTitleAtTh">
+      <h1 className="headerTitle headerTitleAtSeven headerTitleAtFour headerTitleAtTh">
         <Link
           to="/"
           style={{
-            color: `white`,
+            color: `#212322`,
             textDecoration: `none`,
           }}
         >
@@ -41,7 +41,3 @@ Header.defaultProps = {
 }
 
 export default Header
-/*
-<Button className="menuH">
-        <svg  className="svg" height="1rem" viewBox="0 -53 384 384" width="1rem" xmlns="http://www.w3.org/2000/svg"><path d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" fill="whitesmoke"/><path d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" fill="whitesmoke"/><path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" fill="whitesmoke"/></svg>
-        </Button>*/

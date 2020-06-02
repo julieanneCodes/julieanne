@@ -6,11 +6,11 @@ const HeaderLinks = () => {
 
     return (
         <>
-            <div class="links linksAtSeven">
-                <Link to="/code/">Code / Programación</Link>
-                <Link to="/photography/">Photography / Fotografía</Link>
-                <Link to="/contact/">Contact / Contacto</Link>
-                <Link to="/about">About / Acerca de</Link>
+            <div className="links linksAtSeven">
+                <Link to="/code/">Code</Link>
+                <Link to="/photography/">Photography</Link>
+                <Link to="/contact/">Contact</Link>
+                <Link to="/about">About</Link>
             </div>
             <div className="logos">
                 <a href="https://www.instagram.com/bougritte.exe/"><img src={IgImg} alt="instagram logo"/></a>

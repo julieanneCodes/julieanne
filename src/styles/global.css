@@ -16,13 +16,23 @@
     .menuH{margin-bottom: 2rem; padding-top: 1.45rem;}
     .headerC.headerAtSeven {text-align: unset; position: sticky; top:0; z-index: 1;}
     .customButton.customButtonAtSeven{display: none;}
-    .links.linksAtSeven{padding: 0rem 2rem 0rem 0rem;}
+    .links.linksAtSeven{margin: 0 auto; display: grid; width: 50%;}
+    .links.linksAtSeven > a {margin: 0 auto; text-align: center; margin-bottom: 4rem;}
     .svg{float: right;}
     .bm-burger-button {display: block !important;}
     /*.column.columnAtFour{
         flex: 50%;
         max-width: 50%;
     }*/
+    .contactText{padding: .5rem;}
+    .aboutInfo.aboutInfoAtFour > ul {padding-left: 0rem;}
+    .indexF.indexFAtSeven{position: relative;}
+}
+@media only screen and (max-width:768px){
+    .columnCode.columnCodeLite{
+        flex: 100%; max-width: 100%;
+        padding: 0 .30rem; margin-top: 1rem;
+    }
 }
 @media only screen and (min-width:425px) and (max-width:767px){
     .titleBox.titleBoxAtFour{width: 75%; padding: .2rem;}
@@ -36,7 +46,7 @@
     .aboutInfo.aboutInfoAtFour > ul {padding-left: 0rem;}
     .aboutInfo.aboutInfoAtFour{margin-top: 3rem;}
     .indexF.indexFAtFour, .indexS.indexSAtFour{display: inline-block;}
-    .indexF.indexAtFour{margin-bottom: 0rem; top: 5.45rem;}
+    .indexF.indexAtFour{margin-bottom: 0rem; top: 5.45rem; position: sticky;}
     .photoInfo.photoInfoAtFour{margin-top: 0rem;}
     .indexS.indexSAtFour{
         height: 38rem; margin-bottom: 2rem; 
@@ -52,7 +62,7 @@
         height: 26rem; margin-bottom: 2rem; 
         top: 0rem; margin-top: .6rem;
     }
-    .indexF.indexFAtThree{top:5.45rem;}
+    .indexF.indexFAtThree{top:5.45rem; position: sticky;}
     .column.columnAtFour{
         flex: 50%;
         max-width: 50%;
@@ -65,7 +75,7 @@
         top: 0rem;
     }
     .indexS.indexSAtThree, .indexF.indexFAtThree{display: inline-block;}
-    .indexF.indexFAtEleven{top: 7.5rem;}
+    .indexF.indexFAtEleven{top: 7.5rem; position: sticky;}
     .titleBox.titleBoxAtFour{width: 75%; padding: .2rem;}
     .headerC.headerAtFour{height: 4.2rem; margin-bottom: 0rem;}
     .headerTitle.headerTitleAtFour{font-size: 1.25rem; margin-top: 1.5rem;}
@@ -78,58 +88,62 @@
 @media only screen and (min-width: 375px) and (min-height: 812px) {
         .indexF.indexFAtFour{
             margin-bottom: 7rem; margin-top: 2.5rem;
-            top: 7.5rem;
+            top: 7.5rem; position: sticky;
         }
         .indexS.indexSAtFour{height: 40rem;}
         .indexS.indexSAtFour .imageRight{margin-top: 4rem;}
 }
-@media only screen and (min-width: 1280px){
-    .indexF{
-        margin-bottom: 13.5rem !important; margin-top: 4rem !important;
+@media only screen and (min-width: 1280px) and (max-width:1365px){
+    .indexF.indexFAtTw{
+        margin-bottom: 13rem; margin-top: 4rem;
     }
-    .indexF, .indexS {top: 4rem !important;}
-    .indexS{height: 38.5rem !important;}
+    .indexF.indexFAtTw, .indexSAtTw {top: 4rem;}
+    .indexS.indexSAtTw{height: 39.5rem;}
 
 }
-@media only screen and (min-width: 1366px){
-    .indexF{margin-bottom: 9.8rem !important;}
-    .indexS{height: 36.5rem !important;}
+@media only screen and (min-width: 1366px) and (max-width:1439px) {
+    .indexF.indexFAtThr{margin-bottom: 11.5rem; padding-top: 2rem;}
+    .indexS.indexSAtThr{height: 39.2rem; padding-top: 4rem;}
 }
 @media only screen and (min-width: 1440px){
-    .indexF{margin-bottom: 15.5rem !important; margin-top: 5rem !important;}
-    .indexS{height: 45rem !important;}
+    .indexF.indexFAtFoth{margin-bottom: 15.5rem; margin-top: 5rem;}
+    .indexS.indexSAtFoth{height: 45rem;}
+    .photoInfo > ul{margin-top: 5rem;}
 }
 @media only screen and (min-width: 1197px) and (max-width: 1279px){
-    .indexF{margin-bottom: 3.5rem !important;}
-    .indexS{height: 26.5rem !important;}
+    .indexF.indexFAtOneT{margin-bottom: 4rem;}
+    .indexS.indexSAtOneT{height: 27rem;}
 }
-/*@media only screen and (max-width: 1024px){
-    .indexF{margin-bottom: 8.7rem !important;}
-    .indexF, .indexS {
-        top: 1.45rem; 
-    }
-    .indexS{
-        height: 28.5rem !important;
-    }
-}*/
+@media only screen and (min-width: 768px) and (min-height: 1024px){
+    .indexF.indexFAtSeven, .indexS.indexSAtSeven{position: relative;}
+    .indexF.indexFAtSeven{margin-bottom: 0rem; top: 0rem}
+}
+@media only screen and (min-width: 320px) and (max-width: 374px){
+    .titleBox.titleBoxAtThree{width: 80%;}
+    .titleBox.titleBoxAtThree > h1 {font-size: 1.1rem;}
+    .indexF.indexFAtThree, .indexS.indexSAtThree{display: block; position: sticky;}
+    .column.columnAtFour{flex: 50%; max-width: 50%;}
+    .indexS.indexSAtThree{height: 25rem;}
+}
 .headerC{margin-bottom: 1.45rem;}
 .headerTitle{margin: 0;}
 .titleBox{padding: 1.45rem 1.0875rem}
 body{margin: 0rem; width: 100%; height: auto;}
 a{
-    color: whitesmoke; margin: 1.5rem;
+    color: #212322 !important; margin: 1.5rem;
 }
 footer{
     color: #212322;
     padding: 3rem; margin-top: 1rem;
 }
 .links{
-    padding-bottom: 1.5rem; display: inline-block; 
-    padding-left: 5.5rem;
+    display: inline-block;
+    margin: 0 auto; margin-left: 12rem;
+    
 }
 .links a{
-    text-decoration: none; margin-left: 1.5rem; 
-    margin-right: 0rem; font-family: 'Crimson Text', sans-serif;
+    text-decoration: none; margin-left: 0rem; 
+    margin-right: 5rem; font-family: 'Crimson Text', sans-serif;
 }
 .logos img{
     height: 1rem; width: 1rem;
@@ -163,6 +177,7 @@ footer{
     border: 1px solid #ced4da; max-width: 24.349rem;
     padding: .75rem; margin-top: .5rem;
 }
+.formGroup > label{ display: block;}
 /*****  CONTACT PAGE  *****/
 .contactTitle, .contactEmail{
     margin: auto; width: 100%;
@@ -176,26 +191,26 @@ footer{
     margin: auto; width: 100%;
     max-width: 34rem; text-align: center;
 }
-.contactText > h4, .contactEmail > h3{margin-top: 0;}
+.contactText > h4, .contactEmail > h3{margin-top: 0;font-weight: 600 !important; font-size: 1.1rem !important; font-family: initial !important;}
 button{ 
-    height: 3rem; border: 1px solid #212322; 
+    height: 3rem; border: 1px solid white; 
     background-color: inherit; cursor: pointer;
     border-radius: .25rem;
 }
-button:hover{
-    background-color: #212322; color: whitesmoke;
-}
 .links button { display: none;}
+.formGroup > div {display: block;}
+.customWidth{width: 30%;}
 /*****  INDEX PAGE AND PHOTOGRAPHY PAGE  *****/
 .indexF div, .indexS div  {flex: 50%;}
-.imageLeft{padding: .5rem;}
-.indexF{margin-bottom: 8.7rem;}
+/*.imageLeft{padding: .5rem;}*/
+.indexF{margin-bottom: 9.5rem; width: 100%;}
 .indexF, .indexS {
     position: sticky; top: 1.45rem; 
     align-self: flex-start;
 }
 .indexS{
-   background-color: white; height: 28.5rem;
+   background-color: white; height: 29.3rem;
+   width: 100%;
 }
 .photoInfo > div {padding-top: 3rem;}
 .codeInfo, .photoInfo{
@@ -215,6 +230,7 @@ button:hover{
     display: flex; flex-wrap: wrap; 
     padding: 0rem 1rem;
 }
+.indexF{margin-top: 1.5rem;}
 .column{
     flex: 25%; max-width: 25%;
     padding: 0 .30rem;
@@ -250,16 +266,12 @@ button:hover{
     background: whitesmoke;
   }
   .bm-menu-wrap {
-    position: fixed;
-    height: 100%;
+    width: 100% !important;
   }
   .bm-menu {
-    background: #212322;
-    padding: 2.5em 1.5em 0;
+    background: white;
+    padding: 2.5em 0em 0;
     font-size: 1.15em;
-}
-.bm-overlay {
-    background: rgba(0, 0, 0, 0.3);
 }
 .bm-item {
     display: inline-block;
@@ -288,9 +300,16 @@ button:hover{
     margin-top: 2rem; font-family: "Crimson Text", serif;
     font-size: 1.1rem; color: #363a38;
 }
-.aboutInfo > ul {list-style-type: none;}
+.aboutInfo > ul, .codeList {list-style-type: none;}
 .aboutInfo > ul > li:nth-child(1), .aboutInfo > ul > li:nth-child(2), .aboutInfo > ul >li:nth-child(4), .aboutInfo > ul >li:nth-child(5), .aboutInfo > ul >li:nth-child(7), .aboutInfo > ul >li:nth-child(9), .aboutInfo > ul > li:nth-child(11){font-weight: bold;}
 .aboutInfo > ul >li:nth-child(4),.aboutInfo > ul >li:nth-child(6),.aboutInfo > ul >li:nth-child(8),.aboutInfo > ul >li:nth-child(10){padding-left: .5rem;}
-.aboutInfo > ul > li:nth-child(10) {margin-bottom: 4.5rem;}
+/*.aboutInfo > ul > li:nth-child(10) {margin-bottom: 4.5rem;}*/
 .aboutInfo > ul > li:nth-child(1){font-size: 2rem; text-align: center;}
 .aboutInfo > ul > li:nth-child(2){text-align: center; font-size: 1.5rem;}
+/*****  CODE PAGE  *****/
+.codeList >li{margin-bottom: 1.5rem;}
+.codeList >li:nth-child(odd){font-weight: 700;}
+.columnCode{ 
+    flex: 50%; max-width: 50%;
+    padding: 0 .30rem;
+}

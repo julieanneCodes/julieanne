@@ -1,11 +1,10 @@
 import React from "react"
 import Layout from "../components/layout"
-
+import CodeLayout from "../components/codeLayout"
 const CodePage = () => (
     <div>
         <Layout>
-        <h1>Parte de programación</h1>
-        <p>cosas y muchas cosas</p>
+            <CodeLayout/>
         </Layout>
     </div>
 )

@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import Button from 'react-bootstrap/Button'
 import Layout from "../components/layout"
 
 const ContactPage = () =>{
@@ -16,7 +17,7 @@ const ContactPage = () =>{
         return (
             <Layout>
                 <div class="contactTitle">
-                    <h2>Contact/Contacto:</h2>
+                    <h2>Contact:</h2>
                 </div>
                 <div class="contactText">
                     <h4>{data.site.siteMetadata.contactText}</h4>
@@ -30,7 +31,7 @@ const ContactPage = () =>{
                     <input type="hidden" name="form-name" value="contact"/>
                     <div className="formGroup">
                         <label>
-                            <span>Name / Nombre</span>
+                            <span>Name</span>
                             <input type="text" name="name" id="name"/>
                         </label>
                     </div>
@@ -42,11 +43,11 @@ const ContactPage = () =>{
                     </div>
                     <div class="formGroup">
                         <label>
-                            <span>Message / Mensaje</span>
+                            <span>Message</span>
                             <textarea name="message" id="message" rows="5" />
                         </label>
                     </div>
-                    <button type="submit">Send / Enviar</button>
+                    <Button type="submit" variant="outline-dark" className="customWidth">Send</Button>
                 </form>
             </Layout>
         )
