@@ -18,7 +18,7 @@ const ImagesC3 = () => {
             brian: file(relativePath: { eq: "images/brian.jpg" }) {
                 ...ImageSettings
             }
-            romeS: file(relativePath: { eq: "images/romeS.jpg" }) {
+            img873: file(relativePath: { eq: "images/img873.jpg" }) {
                 ...ImageSettings
             }
         }`
@@ -29,7 +29,7 @@ const ImagesC3 = () => {
             <Img fluid={data.horse.childImageSharp.fluid}/>
             <Img fluid={data.brian.childImageSharp.fluid}/>
             <Img fluid={data.placeboC.childImageSharp.fluid}/>
-            <Img fluid={data.romeS.childImageSharp.fluid}/>
+            <Img fluid={data.img873.childImageSharp.fluid}/>
         </>
     )
 }

@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import JSONData from "../content/AboutInfo.json"
 const AboutPage = () => (
+
     <Layout>
         <div className="aboutInfo aboutInfoAtFour">
             <ul>{JSONData.content.map((data,index) => {
@@ -9,5 +10,7 @@ const AboutPage = () => (
             })}</ul>
         </div>
     </Layout>
+
+    
 )
 export default AboutPage

@@ -34,11 +34,14 @@ const SEO = ({ title, description, image, article }) => {
 
       {seo.title && <meta property="og:title" content={seo.title} />}
 
-      {seo.description && (
-        <meta property="og:description" content={seo.description} />
-      )}
+      {seo.description && (<meta property="og:description" content={seo.description} />)}
 
       {seo.image && <meta property="og:image" content={seo.image} />}
+
+      <meta name="instagram:card" content="sumary_large_image" />
+      {seo.image && <meta name="instagram:image" content={seo.image} />}
+
+
 
     </Helmet>
   )

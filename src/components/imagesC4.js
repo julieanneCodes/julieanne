@@ -9,7 +9,7 @@ const ImagesC4 = () => {
             portoBridge: file(relativePath: { eq: "images/portoBridge.jpg" }) {
                 ...ImageSettings
             }
-            romeB: file(relativePath: { eq: "images/romeB.jpg" }) {
+            img884: file(relativePath: { eq: "images/img884.jpg" }) {
                 ...ImageSettings
             }
             granVia: file(relativePath: { eq: "images/485629.jpg" }) {
@@ -18,7 +18,7 @@ const ImagesC4 = () => {
             h: file(relativePath: { eq: "images/485611.jpg" }) {
                 ...ImageSettings
             }
-            phoebe: file(relativePath: { eq: "images/phoebe.jpg" }) {
+            lovebirds: file(relativePath: { eq: "images/720606.jpg" }) {
                 ...ImageSettings
             }
             cantabriaM: file(relativePath: { eq: "images/cantabriaM.jpg" }) {
@@ -31,8 +31,8 @@ const ImagesC4 = () => {
             <Img fluid={data.granVia.childImageSharp.fluid}/>
             <Img fluid={data.portoBridge.childImageSharp.fluid} alt="Porto brigde"/>
             <Img fluid={data.h.childImageSharp.fluid}/>
-            <Img fluid={data.romeB.childImageSharp.fluid}/>
-            <Img fluid={data.phoebe.childImageSharp.fluid}/>
+            <Img fluid={data.img884.childImageSharp.fluid}/>
+            <Img fluid={data.lovebirds.childImageSharp.fluid}/>
             <Img fluid={data.cantabriaM.childImageSharp.fluid}/>
         </>
     )

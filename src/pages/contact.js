@@ -16,14 +16,14 @@ const ContactPage = () =>{
         }`)
         return (
             <Layout>
-                <div class="contactTitle">
+                <div className="contactTitle">
                     <h2>Contact:</h2>
                 </div>
-                <div class="contactText">
+                <div className="contactText">
                     <h4>{data.site.siteMetadata.contactText}</h4>
                     <h4 id="contactName">{data.site.siteMetadata.alter}</h4>
                 </div>
-                <div class="contactEmail">
+                <div className="contactEmail">
                     <h3>{data.site.siteMetadata.email}</h3>
                 </div>
                 
@@ -35,13 +35,13 @@ const ContactPage = () =>{
                             <input type="text" name="name" id="name"/>
                         </label>
                     </div>
-                    <div class="formGroup">
+                    <div className="formGroup">
                         <label>
                             <span>Email</span>
                             <input type="email" name="email" id="email"/>
                         </label>
                     </div>
-                    <div class="formGroup">
+                    <div className="formGroup">
                         <label>
                             <span>Message</span>
                             <textarea name="message" id="message" rows="5" />
