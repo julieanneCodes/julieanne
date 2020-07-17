@@ -8,10 +8,8 @@ const SEO = ({ title2, description, image, article }) => {
   const { site } = useStaticQuery(query)
 
   const {
-    buildTime,
     siteMetadata: {
     defaultTitle,
-    titleTemplate,
     defaultDescription,
     siteUrl,
     defaultImage,
