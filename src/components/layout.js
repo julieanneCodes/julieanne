@@ -5,7 +5,7 @@ import Header from "./header"
 import Footer from "./footer"
 import Scroll from "./ScrollUpButton"
 import "../styles/global.css"
-import SEO from "./SEO"
+import SEO from "./seo/SEO"
 const Layout = ({ children }) => {
     const data = useStaticQuery(graphql`
     query SiteTitleQuery {

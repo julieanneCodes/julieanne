@@ -1,6 +1,8 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
+import Zoom from "react-medium-image-zoom"
+import "react-medium-image-zoom/dist/styles.css"
 const ImagesC1 = () => {
     const data = useStaticQuery(
         graphql`
@@ -27,13 +29,26 @@ const ImagesC1 = () => {
     )
     return (
         <>
-            <Img fluid={data.pau.childImageSharp.fluid}/>
-            <Img fluid={data.phoebe2.childImageSharp.fluid}/>
-            <Img fluid={data.romeP.childImageSharp.fluid}/>
-            <Img fluid={data.tomyM.childImageSharp.fluid}/>
-            <Img fluid={data.img860.childImageSharp.fluid}/>
-            <Img fluid={data.romeB.childImageSharp.fluid}/>
+            <Zoom>
+                <Img fluid={data.pau.childImageSharp.fluid}/>
+            </Zoom>
+            <Zoom>
+                <Img fluid={data.phoebe2.childImageSharp.fluid}/>
+            </Zoom>
+            <Zoom>
+                <Img fluid={data.romeP.childImageSharp.fluid}/>
+            </Zoom>
+            <Zoom>
+                <Img fluid={data.tomyM.childImageSharp.fluid}/>
+            </Zoom>
+            <Zoom>
+                <Img fluid={data.img860.childImageSharp.fluid}/>
+            </Zoom>
+            <Zoom>
+                <Img fluid={data.romeB.childImageSharp.fluid}/>
+            </Zoom>
         </>
     )
 }
 export default ImagesC1
+

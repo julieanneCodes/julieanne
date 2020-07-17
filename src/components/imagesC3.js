@@ -1,7 +1,8 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
-
+import Zoom from "react-medium-image-zoom"
+import "react-medium-image-zoom/dist/styles.css"
 const ImagesC3 = () => {
     const data = useStaticQuery(
         graphql`
@@ -12,7 +13,7 @@ const ImagesC3 = () => {
             karli: file(relativePath: { eq: "images/karli.jpg" }) {
                 ...ImageSettings
             }
-            horse: file(relativePath: { eq: "images/04.jpg" }) {
+            horse: file(relativePath: { eq: "images/05.jpg" }) {
                 ...ImageSettings
             }
             brian: file(relativePath: { eq: "images/brian.jpg" }) {
@@ -25,11 +26,21 @@ const ImagesC3 = () => {
     )
     return (
         <>
-            <Img fluid={data.karli.childImageSharp.fluid}/>
-            <Img fluid={data.horse.childImageSharp.fluid}/>
-            <Img fluid={data.brian.childImageSharp.fluid}/>
-            <Img fluid={data.placeboC.childImageSharp.fluid}/>
-            <Img fluid={data.img873.childImageSharp.fluid}/>
+            <Zoom>
+                <Img fluid={data.karli.childImageSharp.fluid}/>
+            </Zoom>
+            <Zoom>
+                <Img fluid={data.horse.childImageSharp.fluid}/>
+            </Zoom>
+            <Zoom>
+                <Img fluid={data.brian.childImageSharp.fluid}/>
+            </Zoom>
+            <Zoom>
+                <Img fluid={data.placeboC.childImageSharp.fluid}/>
+            </Zoom>
+            <Zoom>
+                <Img fluid={data.img873.childImageSharp.fluid}/>
+            </Zoom>
         </>
     )
 }

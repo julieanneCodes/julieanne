@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import JSONDataCode from '../content/PagesInfo.json'
-import CodeImg from '../../static/images/code3.jpg'
+import CodeImg from '../../static/code3.jpg'
 const CodeLayout = () => {
 
         const [show,setShow] = useState(false)
