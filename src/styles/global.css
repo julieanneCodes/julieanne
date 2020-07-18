@@ -313,3 +313,6 @@ button{
     flex: 50%; max-width: 50%;
     padding: 0 .30rem;
 }
+[data-rmiz-wrap=visible]{
+    display: block !important;
+}
