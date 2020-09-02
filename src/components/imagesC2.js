@@ -16,9 +16,6 @@ const ImagesC2 = () => {
             b: file(relativePath: { eq: "images/485625.jpg" }) {
                 ...ImageSettings
             }
-            ignacio: file(relativePath: { eq: "images/ignacio.jpg" }) {
-                ...ImageSettings
-            }
             whiteLiesC: file(relativePath: { eq: "images/whiteLiesC.jpg" }) {
                 ...ImageSettings
             }
@@ -26,6 +23,9 @@ const ImagesC2 = () => {
                 ...ImageSettings
             }
             img863: file(relativePath: { eq: "images/img863.jpg" }) {
+                ...ImageSettings
+            }
+            simon: file(relativePath: { eq: "images/720629.jpg" }) {
                 ...ImageSettings
             }
         }`
@@ -39,9 +39,6 @@ const ImagesC2 = () => {
                 <Img fluid={data.b.childImageSharp.fluid}/>
             </Zoom>
             <Zoom>
-                <Img fluid={data.ignacio.childImageSharp.fluid}/>
-            </Zoom>
-            <Zoom>
                 <Img fluid={data.m.childImageSharp.fluid}/>
             </Zoom>
             <Zoom>
@@ -52,6 +49,9 @@ const ImagesC2 = () => {
             </Zoom>
             <Zoom>
                 <Img fluid={data.img863.childImageSharp.fluid}/>
+            </Zoom>
+            <Zoom>
+                <Img fluid={data.simon.childImageSharp.fluid}/>
             </Zoom>
 
         </>
