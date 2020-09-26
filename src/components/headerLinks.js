@@ -13,7 +13,7 @@ const HeaderLinks = () => {
                 <Link to="/about">About</Link>
             </div>
             <div className="logos">
-                <a href="https://www.instagram.com/bougritte.exe/"><img src={IgImg} alt="instagram logo"/></a>
+                <a href="https://www.instagram.com/bougritte/"><img src={IgImg} alt="instagram logo"/></a>
                 <a href="https://www.linkedin.com/in/julianaO1502" id="inLogo"><img src={LnImg} alt="linkedin logo"/></a>
             </div>
         </>
