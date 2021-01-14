@@ -71,7 +71,7 @@ a:hover {
   display: grid;
   margin-bottom: 1rem;
   grid-template-rows: 4rem;
-  grid-template-columns: 16.9rem 10rem;
+  grid-template-columns: 17rem 2rem;
   align-items: end;
 }
 .bm-menu {
