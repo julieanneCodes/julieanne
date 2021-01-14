@@ -108,7 +108,7 @@ a:hover {
 }
 @media (min-width: 375px) {
   .headerC {
-    grid-template-columns: 20.4rem 10rem;
+    grid-template-columns: 20rem 10rem;
   }
   .bm-menu {
     font-size: 1.6rem;
