@@ -2,7 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
-import Footer from "./footer"
 import Scroll from "./ScrollUpButton"
 import "../styles/global.css"
 import SEO from "./seo/SEO"
@@ -22,7 +21,6 @@ const Layout = ({ children }) => {
         <SEO/>
         <Header siteTitle={data.site.siteMetadata.title}/>
             <main>{children} <Scroll/></main>
-        <Footer/>
         </>
     )
     }

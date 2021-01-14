@@ -18,7 +18,7 @@ const IndexLayout = () => {
     return (
     <>
     <div className="indexContainer">
-        <div className="indexF indexFAtFour indexFAtThree indexFAtFout indexFAtTw indexFAtThr indexFAtFoth indexFAtOneT indexFAtEleven indexFAtSeven">
+        <div className="indexF">
             <div className="imageLeft">
                 <Img fluid={data.code.childImageSharp.fluid}/>
             </div>

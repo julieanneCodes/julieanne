@@ -4,7 +4,7 @@ import JSONData from "../content/AboutInfo.json"
 const AboutPage = () => (
     
     <Layout>
-        <div className="aboutInfo aboutInfoAtFour">
+        <div className="aboutInfo">
             <ul>{JSONData.content.map((data,index) => {
                 return <li key={`content_item_${index}`}>{data.item}</li>
             })}</ul>

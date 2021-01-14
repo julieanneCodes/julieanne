@@ -3,32 +3,22 @@ import PropTypes from "prop-types"
 import React from "react"
 import MenuB from "./BurgerMenu"
 import HeaderLinks from "./headerLinks"
+import "../styles/header-styles.css"
 const Header = ({ siteTitle }) => (
-  <header className="headerC headerAtSeven headerAtFour"
+  <header className="headerC"
     style={{
       background: `white`,
     }}
   >
-    <div className="titleBox titleBoxAtSeven titleBoxAtFour titleBoxAtThree"
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-      }}
-    >
-      <h1 className="headerTitle headerTitleAtSeven headerTitleAtFour headerTitleAtTh">
-        <Link
-          to="/"
-          style={{
-            color: `#212322`,
-            textDecoration: `none`,
-          }}
-        >
+    <div className="titleBox">
+      <h1 className="headerTitle">
+        <Link to="/">
           {siteTitle}
         </Link>
       </h1>
     </div>
+    <MenuB/>
     <HeaderLinks/>
-    <div className="right"><MenuB/></div>
   </header>
 )
 

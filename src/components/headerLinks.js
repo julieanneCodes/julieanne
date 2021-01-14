@@ -6,15 +6,16 @@ const HeaderLinks = () => {
 
     return (
         <>
-            <div className="links linksAtSeven">
+            <div className="links">
                 <Link to="/code/">Code</Link>
                 <Link to="/photography/">Photography</Link>
                 <Link to="/contact/">Contact</Link>
                 <Link to="/about">About</Link>
-            </div>
-            <div className="logos">
-                <a href="https://www.instagram.com/bougritte/"><img src={IgImg} alt="instagram logo"/></a>
-                <a href="https://www.linkedin.com/in/julianaO1502" id="inLogo"><img src={LnImg} alt="linkedin logo"/></a>
+            
+                <div className="logos">
+                    <a href="https://www.instagram.com/bougritte/"><img src={IgImg} alt="instagram logo"/></a>
+                    <a href="https://www.linkedin.com/in/julianaO1502" id="inLogo"><img src={LnImg} alt="linkedin logo"/></a>
+                </div>
             </div>
         </>
     )
