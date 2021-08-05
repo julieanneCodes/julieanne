@@ -7,39 +7,27 @@ const ImagesC3 = () => {
     const data = useStaticQuery(
         graphql`
         query {
-            placeboC: file(relativePath: { eq: "images/placeboC.jpg" }) {
+            img02: file(relativePath: { eq: "images/02.jpg" }) {
                 ...ImageSettings
             }
-            karli: file(relativePath: { eq: "images/karli.jpg" }) {
+            img05: file(relativePath: { eq: "images/05.jpg" }) {
                 ...ImageSettings
             }
-            horse: file(relativePath: { eq: "images/05.jpg" }) {
-                ...ImageSettings
-            }
-            brian: file(relativePath: { eq: "images/brian.jpg" }) {
-                ...ImageSettings
-            }
-            img873: file(relativePath: { eq: "images/img873.jpg" }) {
+            img06: file(relativePath: { eq: "images/fp4-yashica.jpg" }) {
                 ...ImageSettings
             }
         }`
     )
     return (
-        <>
+        <>                     
             <Zoom>
-                <Img fluid={data.karli.childImageSharp.fluid}/>
+                <Img fluid={data.img02.childImageSharp.fluid}/>
             </Zoom>
             <Zoom>
-                <Img fluid={data.horse.childImageSharp.fluid}/>
+                <Img fluid={data.img05.childImageSharp.fluid}/>
             </Zoom>
             <Zoom>
-                <Img fluid={data.brian.childImageSharp.fluid}/>
-            </Zoom>
-            <Zoom>
-                <Img fluid={data.placeboC.childImageSharp.fluid}/>
-            </Zoom>
-            <Zoom>
-                <Img fluid={data.img873.childImageSharp.fluid}/>
+                <Img fluid={data.img06.childImageSharp.fluid}/>
             </Zoom>
         </>
     )
