@@ -16,16 +16,23 @@ const ImagesC1 = () => {
             angel: file(relativePath: { eq: "images/angel.jpg" }) {
                 ...ImageSettings
             }
+            img0010: file(relativePath: { eq: "images/10.jpg" }) {
+                ...ImageSettings
+            }
         }`
     )
     return (
         <>
+            <Zoom>
+                <Img fluid={data.img0010.childImageSharp.fluid}/>
+            </Zoom>
             <Zoom>
                 <Img fluid={data.pau.childImageSharp.fluid}/>
             </Zoom>
             <Zoom>
                 <Img fluid={data.img250.childImageSharp.fluid}/>
             </Zoom>
+            
             <Zoom>
                 <Img fluid={data.angel.childImageSharp.fluid}/>
             </Zoom>
