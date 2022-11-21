@@ -41,12 +41,12 @@ a:hover {
   width: 2rem;
   margin: auto;
 }
-.headerTitle {
+.header-title {
   font-family: 'Julius Sans One',sans-serif;
   font-size: 1.25rem;
   margin: 0;
 }
-.headerTitle > a {
+.header-title > a {
   color: black;
   text-decoration: none;
   font-weight: 500;
@@ -56,14 +56,14 @@ a:hover {
 .links > a, .links > .logos {
   display: none;
 }
-.titleBox {
+.title-box {
   padding: .2rem;
 }
-.menuH {
+.menu-h {
   margin-bottom: 2rem;
   padding-top: 1.45rem;
 }
-.headerC {
+.header-c {
   position: sticky;
   top: 0;
   z-index: 1;
@@ -107,34 +107,34 @@ a:hover {
   display: inline-block;
 }
 @media (min-width: 375px) {
-  .headerC {
+  .header-c {
     grid-template-columns: 20rem 10rem;
   }
   .bm-menu {
     font-size: 1.6rem;
   }
-  .headerTitle {
+  .header-title {
     font-size: 1.5rem;
   }
 }
 @media (min-width: 425px) {
-  .headerC {
+  .header-c {
     grid-template-columns: 23.5rem 10rem;
   }
 }
 
 @media (min-width: 768px) {
-  .headerC {
+  .header-c {
     text-align: center;
     margin-bottom: 1.45rem;
     display: block;
     height: auto;
     position: relative;
   }
-  .headerTitle {
+  .header-title {
     font-size: 2.5rem;
   }
-  .titleBox {
+  .title-box {
     padding: 1.45rem 1.0875rem;
   }
   .bm-burger-button {

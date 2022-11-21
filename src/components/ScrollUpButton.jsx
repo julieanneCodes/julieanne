@@ -6,7 +6,7 @@ export default class Scroll extends React.Component {
     render () {
         return (
 
-            <ScrollUpButton ContainerClassName="customButton customButtonAtSeven" TransitionClassName="transition">
+            <ScrollUpButton ContainerClassName="custom-button custom-button-at-seven" TransitionClassName="transition">
                 <img src={Arrow} alt="arrow"/>
             </ScrollUpButton>
             

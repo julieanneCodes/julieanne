@@ -10,8 +10,8 @@ const Header = ({ siteTitle }) => (
       background: `white`,
     }}
   >
-    <div className="titleBox">
-      <h1 className="headerTitle">
+    <div className="title-box">
+      <h1 className="header-title">
         <Link to="/">
           {siteTitle}
         </Link>

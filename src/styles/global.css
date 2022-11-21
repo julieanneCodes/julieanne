@@ -6,7 +6,7 @@
 main {
     margin-bottom: 2rem;
 }
-.customButton {
+.custom-button {
     display: none;
 }
 /*****  FORM  *****/
@@ -19,11 +19,11 @@ main {
     display: block; 
     text-align: left;
 }
-.formGroup {
+.form-group {
     position: relative; 
     margin-bottom: 1rem;
 }
-.formGroup > label > input {
+.form-group > label > input {
     height: 3.125rem; 
     padding: .75rem;
     width: 100%; 
@@ -32,7 +32,7 @@ main {
     overflow: visible;
     margin-top: .5rem;
 }
-.formGroup > label > textarea {
+.form-group > label > textarea {
     width: 100%; 
     border-radius: .25rem;
     border: 1px solid #ced4da; 
@@ -40,93 +40,93 @@ main {
     padding: .75rem; 
     margin-top: .5rem;
 }
-.formGroup > label { 
+.form-group > label { 
     display: block;
 }
 /*****  CONTACT PAGE  *****/
-.contactTitle, .contactEmail {
+.contact-title, .contact-email {
     margin: auto; 
     width: 100%;
     max-width: 26.25rem; 
     padding: .75rem;
     text-align: center;
 }
-.contactTitle > h2 {
+.contact-title > h2 {
     margin-top: 0rem; 
     font-family: 'Crimson Text', serif;
 }
-.contactText{
+.contact-text{
     margin: auto; 
     width: 100%;
     text-align: center;
     padding: .75rem;
 }
-.contactText > h4, .contactEmail > h3 {
+.contact-text > h4, .contact-email > h3 {
     margin-top: 0;
     font-weight: 600 !important; 
     font-size: 1.1rem !important; 
     font-family: initial !important;
 }
-button{ 
+button { 
     height: 3rem; 
     border: 1px solid white; 
     background-color: inherit; 
     cursor: pointer;
     border-radius: .25rem;
 }
-.formGroup > div {
+.form-group > div {
     display: block;
 }
-.customWidth {
+.custom-width {
     width: 30%;
 }
 /*****  INDEX PAGE AND PHOTOGRAPHY PAGE  *****/
-.indexF div, .indexS div  {
+.index-f div, .index-s div  {
     flex: 50%;
 }
-.indexF {
+.index-f {
     margin-bottom: 9.5rem; 
     width: 100%;
 }
-.indexF, .indexS {
+.index-f, .index-s {
     position: sticky; 
     top: 1.45rem; 
     align-self: flex-start;
 }
-.indexS {
+.index-s {
    background-color: white; 
    height: 29.3rem;
    width: 100%;
 }
-.photoInfo > div {
+.photo-info > div {
     padding-top: 3rem;
 }
-.codeInfo, .photoInfo {
+.code-info, .photo-info {
     margin-top: 4rem;
 }
 
-.codeInfo ul, .photoInfo > ul {
+.code-info ul, .photo-info > ul {
     list-style-type: none; 
     padding: 1rem;
 }
-.codeInfo ul > li:nth-child(1), .photoInfo > ul > li:nth-child(1) {
+.code-info ul > li:nth-child(1), .photo-info > ul > li:nth-child(1) {
     text-align: center; 
     font-family: 'Crimson Text', serif;
     font-size: 1.5rem; 
     font-weight: bold;
 }
-.codeInfo ul > li:nth-child(2), .photoInfo > ul > li:nth-child(2) {
+.code-info ul > li:nth-child(2), .photo-info > ul > li:nth-child(2) {
     text-align: center; 
     font-family: 'Crimson Text', serif;
     font-size: 1.15rem; 
     margin-top: 4rem;
 }
-.photosContainer, .indexF, .indexS {
+.photos-container, .index-f, .index-s {
     display: flex; 
     flex-wrap: wrap; 
     padding: 0rem 1rem;
 }
-.indexF {
+.index-f {
     margin-top: 1.5rem;
 }
 .column {
@@ -140,24 +140,24 @@ button{
     width: 100%;
 }
 /*****  404 PAGE  *****/
-.errorContainer { 
+.error-container { 
     max-width: 26.25rem; 
     margin: 0 auto;
     padding: 1rem; 
     height: 20rem;
     text-align: center;
 }
-.errorContainer > p { 
+.error-container > p { 
     margin-top: 3rem; 
     margin-bottom: 3rem;
     font-size: 1.5rem;
 }
-.errorContainer > div > a {
+.error-container > div > a {
     color: #212322; 
     margin: 0;
     font-size: 1.25rem;
 }
-.errorContainer > div {
+.error-container > div {
     text-align: left; 
     padding: 1rem;
 }
@@ -165,62 +165,62 @@ button{
 .transition {
     right: 20px;
 }
-.customButton > img{
+.custom-button > img{
     height: 2.5rem; 
     width: 2.5rem; 
     position: relative; 
     top: 0rem;
 }
 /*****  ABOUT PAGE  *****/
-.aboutInfo {
+.about-info {
     padding: .5rem;
 }
-.aboutInfo > ul {
+.about-info > ul {
     padding: unset;
 }
-.aboutInfo > ul > li:nth-of-type(3) {
+.about-info > ul > li:nth-of-type(3) {
     padding: 1rem;
 }
-.aboutInfo > ul > li {
+.about-info > ul > li {
     margin-top: 1rem; 
     font-family: "Crimson Text", serif;
     font-size: 1.1rem; 
     color: #363a38;
 }
-.aboutInfo > ul, .codeList {
+.about-info > ul, .code-list {
     list-style-type: none;
 }
-.aboutInfo > ul >li:nth-child(1), .aboutInfo > ul >li:nth-child(2) {
+.about-info > ul >li:nth-child(1), .about-info > ul >li:nth-child(2) {
     font-weight: bold;
 }
-.aboutInfo > ul >li:nth-child(4) {
+.about-info > ul >li:nth-child(4) {
     text-align: center;
     padding-left: unset;
     font-weight: bold;
 }
-.aboutInfo > ul >li:nth-child(5), .aboutInfo > ul >li:nth-child(7), .aboutInfo > ul >li:nth-child(9), .aboutInfo > ul > li:nth-child(11){
+.about-info > ul >li:nth-child(5), .about-info > ul >li:nth-child(7), .about-info > ul >li:nth-child(9), .about-info > ul > li:nth-child(11){
     font-weight: bold;
     padding-left: 1rem;
 }
-.aboutInfo > ul >li:nth-child(6),.aboutInfo > ul >li:nth-child(8),.aboutInfo > ul >li:nth-child(10), .aboutInfo > ul >li:nth-child(12){
+.about-info > ul >li:nth-child(6),.about-info > ul >li:nth-child(8),.about-info > ul >li:nth-child(10), .about-info > ul >li:nth-child(12){
     padding-left: 3rem;
 }
-.aboutInfo > ul > li:nth-child(1) {
+.about-info > ul > li:nth-child(1) {
     font-size: 2rem; 
     text-align: center;
 }
-.aboutInfo > ul > li:nth-child(2) {
+.about-info > ul > li:nth-child(2) {
     text-align: center; 
     font-size: 1.5rem;
 }
 /*****  CODE PAGE  *****/
-.codeList >li {
+.code-list >li {
     margin-bottom: 1.5rem;
 }
-.codeList >li:nth-child(odd) {
+.code-list >li:nth-child(odd) {
     font-weight: 700;
 }
-.columnCode { 
+.column-code { 
     flex: 100%; 
     max-width: 100%;
     padding: 0 .30rem;
@@ -230,16 +230,16 @@ button{
 }
 
 @media (min-width: 375px) {
-    .aboutInfo > ul >li:nth-child(6),.aboutInfo > ul >li:nth-child(8),.aboutInfo > ul >li:nth-child(10), .aboutInfo > ul >li:nth-child(12){
+    .about-info > ul >li:nth-child(6),.about-info > ul >li:nth-child(8),.about-info > ul >li:nth-child(10), .about-info > ul >li:nth-child(12){
         padding: 0rem 2rem 0rem 2rem;    
     }
 }
 @media (min-width: 768px) {
-    .columnCode {
+    .column-code {
         flex: 50%;
         max-width: 50%;
     }
-    .customButton {
+    .custom-button {
         display: block;
         position: fixed;
         right: -100px;
@@ -255,7 +255,7 @@ button{
     .transition {
         right: 20px;
     }
-    .customButton > img {
+    .custom-button > img {
         height: 2.5rem; 
         width: 2.5rem; 
         position: relative; 

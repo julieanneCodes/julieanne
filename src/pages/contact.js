@@ -16,38 +16,38 @@ const ContactPage = () =>{
         }`)
         return (
             <Layout>
-                <div className="contactTitle">
+                <div className="contact-title">
                     <h2>Contact:</h2>
                 </div>
-                <div className="contactText">
+                <div className="contact-text">
                     <h4>{data.site.siteMetadata.contactText}</h4>
                     <h4 id="contactName">{data.site.siteMetadata.alter}</h4>
                 </div>
-                <div className="contactEmail">
+                <div className="contact-email">
                     <h3>{data.site.siteMetadata.email}</h3>
                 </div>
                 
                 <form name="contact" method="post" data-netlify-honeypot="bot-field" data-netlify="true" class="form">
                     <input type="hidden" name="form-name" value="contact"/>
-                    <div className="formGroup">
+                    <div className="form-group">
                         <label>
                             <span>Name</span>
                             <input type="text" name="name" id="name"/>
                         </label>
                     </div>
-                    <div className="formGroup">
+                    <div className="form-group">
                         <label>
                             <span>Email</span>
                             <input type="email" name="email" id="email"/>
                         </label>
                     </div>
-                    <div className="formGroup">
+                    <div className="form-group">
                         <label>
                             <span>Message</span>
                             <textarea name="message" id="message" rows="5" />
                         </label>
                     </div>
-                    <Button type="submit" variant="outline-dark" className="customWidth">Send</Button>
+                    <Button type="submit" variant="outline-dark" className="custom-width">Send</Button>
                 </form>
             </Layout>
         )

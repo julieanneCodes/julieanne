@@ -17,12 +17,12 @@ const IndexLayout = () => {
     )
     return (
     <>
-    <div className="indexContainer">
-        <div className="indexF">
-            <div className="imageLeft">
+    <div className="index-container">
+        <div className="index-f">
+            <div className="image-left">
                 <Img fluid={data.code.childImageSharp.fluid}/>
             </div>
-            <div className="codeInfo">
+            <div className="code-info">
                 
                     <ul>{JSONData.content.map((data,index) => {
                         return <li key={`content_item_${index}`}>{data.item}</li>
@@ -31,14 +31,14 @@ const IndexLayout = () => {
             
             </div>
         </div>
-        <div className="indexS indexSAtFour indexSAtThree indexSAtFour indexSAtTw indexSAtThr indexSAtFoth indexSAtOneT indexSAtEleven indexSAtSeven">
-            <div className="photoInfo photoInfoAtFour">
+        <div className="index-s index-s-at-four index-s-at-three index-s-at-four index-s-at-tw index-s-at-thr index-s-at-foth index-s-at-one-t index-s-at-eleven index-s-at-sseven">
+            <div className="photo-info photo-info-at-four">
                 <ul>{JSONDataP.content.map((data,index) => {
                 return <li key={`content_item_${index}`}>{data.item}</li>
                 })}
                 </ul>
             </div>
-            <div className="imageRight">
+            <div className="image-right">
                 <Img fluid={data.phoebeIndex.childImageSharp.fluid}/>
             </div>
         </div>

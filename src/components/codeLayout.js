@@ -12,8 +12,8 @@ const CodeLayout = () => {
         const handleShow = () => setShow(true)
     return (
         <>
-        <div className="photosContainer">
-            <div className="columnCode columnCodeLite">
+        <div className="photos-container">
+            <div className="column-code column-code-lite">
                     <Card>
                         <Card.Img variant="top" src={CodeImg}/>
                         <Card.Body>
@@ -26,7 +26,7 @@ const CodeLayout = () => {
                         <Modal.Title>Julieanne Codes</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <ul className="codeList">
+                        <ul className="code-list">
                             {JSONDataCode.content.map((data,index) => {
                                 return <li key={`content_item_${index}`}>{data.item}</li>
                             })}

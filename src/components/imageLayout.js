@@ -9,11 +9,11 @@ const ImageLayout = () => {
 
 return (    
         <Layout>
-        <div className="photosContainer">
-                <div className="column columnAtFour"><ImagesC1/></div>
-                <div className="column columnAtFour"><ImagesC2/></div>
-                <div className="column columnAtFour"><ImagesC3/></div>
-                <div className="column columnAtFour"><ImagesC4/></div>
+        <div className="photos-container">
+                <div className="column column-at-four"><ImagesC1/></div>
+                <div className="column column-at-four"><ImagesC2/></div>
+                <div className="column column-at-four"><ImagesC3/></div>
+                <div className="column column-at-four"><ImagesC4/></div>
             </div>
         </Layout>
 )
